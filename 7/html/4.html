@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运算符</title>
+</head>
+<body>
+    <script>
+        var a = 1;
+        var b = 2;
+        var c = 10;
+        var d = 5;
+        console.log(a+b,'a+b')
+        console.log(c-d,'c-d')
+        console.log(a*b,'a*b')
+        console.log(a/b,'a/b')
+        // %取余
+        console.log(b%c,'b%c')
+
+        console.log(a + '23')//在加法运算中，number + string 这两种数据类型的时候 进行拼接
+        console.log(b + '56')//256
+        console.log('34'+'56')//在加法运算中，都是字符串时进行拼接
+        console.log('ab'+b)//ab2
+        console.log(true + c)//number时 true => 1(number)  11
+        console.log(true + '34')//string时 true34
+        console.log(true + false)//boolean时 true=>1 false=>0    1 
+        console.log(null + c)// 10
+        console.log(undefined + c)//NaN 非法数字 无法运算 
+
+        console.log(c-d)//5 在减法运算中 number类型时 正常的减法运算
+        console.log(c - '2')//8在减法运算中 number string(数字) 进行数据类型换算 可以进行减法运算
+        console.log(c - '哈哈哈')//NaN 
+        console.log(c - 'hahaha')//NaN
+
+        console.log(c - true)//9
+        console.log(c - null)//10
+        console.log(c - undefined)//NaN
+
+        console.log(c * '2')// 20
+        console.log(c * '哈哈哈')//NaN
+        console.log(c * 'hahaha')//NaN
+        console.log(c * d) // 50
+        console.log(c * false)// 0
+        console.log(c * null)// 0
+        console.log(c * undefined)//NaN
+
+
+        console.log(c / '2')//5
+        console.log(c / 'hahah')//NaN
+        console.log(c / false)//Infinity
+        console.log(c / true)//10
+        console.log(c / null)//Infinity
+        console.log(c / undefined)//NaN
+
+
+    </script>
+</body>
+</html>
